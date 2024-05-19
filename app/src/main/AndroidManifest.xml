@@ -13,6 +13,51 @@
         android:theme="@style/Theme.Ditisha"
         tools:targetApi="31">
         <activity
+            android:name=".Medicine"
+            android:exported="false" />
+        <activity
+            android:name=".Tips5"
+            android:exported="false" />
+        <activity
+            android:name=".Tips4"
+            android:exported="false" />
+        <activity
+            android:name=".Tips3"
+            android:exported="false" />
+        <activity
+            android:name=".Tips2"
+            android:exported="false" />
+        <activity
+            android:name=".Tips1"
+            android:exported="false" />
+        <activity
+            android:name=".HealthTips"
+            android:exported="false" />
+        <activity
+            android:name=".BMI"
+            android:exported="false" />
+        <activity
+            android:name=".Nutrition"
+            android:exported="false" />
+        <activity
+            android:name=".Mother"
+            android:exported="false" />
+        <activity
+            android:name=".Avoid"
+            android:exported="false" />
+        <activity
+            android:name=".Care"
+            android:exported="false" />
+        <activity
+            android:name=".Rest"
+            android:exported="false" />
+        <activity
+            android:name=".Hydration"
+            android:exported="false" />
+        <activity
+            android:name=".First_trimester"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity

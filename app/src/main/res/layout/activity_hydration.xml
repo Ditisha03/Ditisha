@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Hydration Tips for First Trimester"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tips1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:text="1. Drink plenty of water throughout the day, aiming for at least 8-10 glasses."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewTip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tips1"
+        android:layout_marginTop="16dp"
+        android:text="2. Carry a reusable water bottle with you to stay hydrated on the go."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewTip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTip2"
+        android:layout_marginTop="16dp"
+        android:text="3. Avoid or limit caffeinated beverages, as they can contribute to dehydration."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewTip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTip3"
+        android:layout_marginTop="16dp"
+        android:text="4. Consume hydrating foods such as fruits and vegetables, which have high water content."
+        android:textColor="@color/white" />
+
+    <!-- Add more TextViews for additional tips if needed -->
+
+</RelativeLayout>

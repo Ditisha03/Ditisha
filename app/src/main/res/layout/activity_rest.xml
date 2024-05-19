@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Rest Tips for First Trimester"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tips1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:text="1. Prioritize sleep and aim for 7-9 hours of quality rest each night."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewTip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tips1"
+        android:layout_marginTop="16dp"
+        android:text="2. Take short naps during the day to combat fatigue and boost energy levels."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewTip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTip2"
+        android:layout_marginTop="16dp"
+        android:text="3. Use pillows to support your body while sleeping, especially your growing belly."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewTip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTip3"
+        android:layout_marginTop="16dp"
+        android:text="4. Listen to your body and rest when you feel tired or fatigued."
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

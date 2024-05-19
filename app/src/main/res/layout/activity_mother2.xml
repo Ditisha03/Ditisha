@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/Firsttrimestertitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+
+        android:foregroundGravity="center"
+        android:text="Mother and Chlid"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nutrition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Firsttrimestertitle"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn1"
+        android:text="First Trimester"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutrition"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn1"
+        android:text="Second Trimester"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/rest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn1"
+        android:text="third trimester"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

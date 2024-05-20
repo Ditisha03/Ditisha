@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseApp.initializeApp(this);
         mDatabase = FirebaseDatabase.getInstance().getReference();
-        mDatabase.setValue("Hello");
+        //mDatabase.setValue("Hello");
+        writeNewUser("1", "Jhinuk", "1234", 5, "jhinuk");
 
         ImageView sohoj = (ImageView) findViewById(R.id.sohoj);
         sohoj.setOnClickListener(new View.OnClickListener() {
@@ -34,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    private void writeNewUser(String userId, String name, String phone, int age, String password ) {
+        User user = new User(name, phone, age, password);
+        mDatabase.child("users").child(userId).setValue(user);
     }
 }

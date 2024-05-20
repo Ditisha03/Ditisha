@@ -23,8 +23,9 @@ public class MainActivity extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
         mDatabase = FirebaseDatabase.getInstance().getReference();
         //mDatabase.setValue("Hello");
-        writeNewUser("1", "Jhinuk", "1234", 5, "jhinuk");
+       // writeNewUser("1", "Jhinuk", "1234", 5, "jhinuk");
 
+       // writeNewUser("2", "Abir", "12345", 5, "abir");
         ImageView sohoj = (ImageView) findViewById(R.id.sohoj);
         sohoj.setOnClickListener(new View.OnClickListener() {
             @Override

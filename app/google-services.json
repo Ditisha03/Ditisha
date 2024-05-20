@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559519676315",
+    "project_id": "fir-connection-cdb82",
+    "storage_bucket": "fir-connection-cdb82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559519676315:android:3f5ee6cc73b348b0d8d33e",
+        "android_client_info": {
+          "package_name": "com.example.ditisha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1I0RVlUYDXIJVAVrPqp-bbNkO43MOOYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

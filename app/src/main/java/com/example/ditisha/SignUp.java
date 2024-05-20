@@ -9,18 +9,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class SignUp extends AppCompatActivity {
 
     private EditText usernameEditText;
     private EditText phoneEditText;
     private EditText ageEditText;
     private EditText passwordEditText;
+    private DatabaseReference mDatabase;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        FirebaseApp.initializeApp(this);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         usernameEditText = findViewById(R.id.username);
         phoneEditText = findViewById(R.id.phone);
@@ -33,6 +41,7 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                createUser();
+
                 //Intent intent = new Intent(SignUp.this, Home.class);
                 //startActivity(intent);
             }
@@ -68,6 +77,14 @@ public class SignUp extends AppCompatActivity {
             passwordEditText.setError("Password is required");
             return;
         }
+writeNewUser(username, username,phone,age,password);
 
+
+    }
+    private void writeNewUser(String userId, String name, String phone, int age, String password ) {
+        User user = new User(name, phone, age, password);
+        mDatabase.child("users").child(userId).setValue(user);
+        Intent intent = new Intent(SignUp.this, Home.class);
+        startActivity(intent);
     }
 }
